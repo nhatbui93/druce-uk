@@ -1,44 +1,41 @@
+import Page from "@/components/layout/Page";
+import { Button } from "@/components/ui/button";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
-import localFont from "next/font/local";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <section className="bg-white">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div className="max-w-screen-md">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-                Welcome to @Druce!
-              </h2>
-              <p className="mb-8 font-light text-gray-500 sm:text-xl">
-                We Are Your Lifelong Partner In Your Real Estate Journey.
-              </p>
-              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary rounded-lg hover:bg-secondary focus:ring-4"
-                >
-                  Get started
-                </a>
-              </div>
-            </div>
+    <Page>
+      <NextSeo
+        title="Prime Central London Property Sales and Lettings - Druce"
+        description="With headquarters in London and offices in Dubai and Singapore, we have both local knowledge and global reach in luxury residential property"
+      />
+      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Welcome to @Druce!
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+        <div className="text-center">
+          <h1 className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            How much is your property worth?
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            We'll guarantee you an asking price offer in just 4 weeks or reduce
+            your sales fee by 20%.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Button asChild>
+              <a href="#">Contact us</a>
+            </Button>
+            <Button asChild variant="ghost">
+              <a href="#">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </Page>
   );
 }

@@ -1,7 +1,6 @@
+import { NextSeo } from "next-seo";
 import Page from "@/components/layout/Page";
 import { Button } from "@/components/ui/Button";
-import { NextSeo } from "next-seo";
-
 export default function Home() {
   return (
     <Page>
@@ -11,12 +10,12 @@ export default function Home() {
       />
       <div className="wrapper mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-5 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-primary/10 hover:ring-primary/20">
             Welcome to @Druce!
           </div>
         </div>
         <div className="text-center">
-          <h1 className="font-heading text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-6xl">
             How much is your property worth?
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -36,5 +35,6 @@ export default function Home() {
         </div>
       </div>
     </Page>
+
   );
 }

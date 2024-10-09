@@ -1,5 +1,4 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="bg-primary-foreground py-2 lg:py-12">

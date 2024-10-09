@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Head from "next/head";
 
-const Page = (props:any) => {
+const Page = (props : any) => {
   const { children, className = "" } = props;
   return (
     <>

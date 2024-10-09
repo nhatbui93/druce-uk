@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-primary-foreground py-2 lg:py-12">
       <div className="wrapper">
         <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-flow-col gap-x-10 xl:gap-x-16 lg:grid-cols-[repeat(3,auto)]">
-          <div className="text-primary lg:order-2 py-7 lg:py-0 last:border-b-0 md:border-b-0 border-b-2 border-primary">
+          <div className="text-primary lg:order-2 py-7 lg:py-0 last:border-b-0 md:border-b-0 border-b border-gray-300">
             <h3 className="text-2xl mb-5 md:mb-7 font-heading font-semibold">
               HEAD OFFICE
             </h3>
@@ -20,7 +20,7 @@ export default function Footer() {
               <li className="w-full relative text-base flex">
                 <Phone className="w-6 h-6 text-primary mr-3 flex-none grow-0" />
                 <a
-                  className="grow hover:text-secondary"
+                  className="grow hover:text-secondary transition-colors"
                   href="tel:+442071836592"
                 >
                   + 44 207 183 6592
@@ -29,7 +29,7 @@ export default function Footer() {
               <li className="w-full relative text-base flex">
                 <Mail className="w-6 h-6 text-primary mr-3 flex-none grow-0" />
                 <a
-                  className="grow hover:text-secondary"
+                  className="grow hover:text-secondary transition-colors"
                   href="mailto::enquiries@druce.com"
                 >
                   enquiries@druce.com
@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="text-primary lg:order-3 py-7 lg:py-0 last:border-b-0 md:border-b-0 border-b-2 border-primary">
+          <div className="text-primary lg:order-3 py-7 lg:py-0 last:border-b-0 md:border-b-0 border-b border-gray-300">
             <h3 className="text-2xl mb-5 md:mb-7 font-heading font-semibold">
               @DRUCE
             </h3>
@@ -47,7 +47,7 @@ export default function Footer() {
                   <b className="block mb-2">Mobile application</b>
                   <p>Download app to stay connected on the go with us</p>
                 </div>
-                <div className="flex space-x-5 justify-center md:space-x-2 pt-5">
+                <div className="flex space-x-5 md:justify-center md:space-x-2 pt-5">
                   <a
                     href="https://play.google.com/"
                     target="_blank"
@@ -88,7 +88,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="text-primary lg:order-1 py-7 lg:py-0 lg:col-span-1 md:col-span-2 last:border-b-0 md:border-b-0 border-b-2 border-primary">
+          <div className="text-primary lg:order-1 py-7 lg:py-0 lg:col-span-1 md:col-span-2 last:border-b-0 md:border-b-0 border-b border-gray-300">
             <div className="text-sm">
               <h3 className="font-bold mb-2">
                 © 2023 Druce & Co (International) Ltd.
@@ -135,7 +135,7 @@ export default function Footer() {
                     href="#"
                     target="_blank"
                     title="Linkedin"
-                    className="flex items-center justify-center hover:text-secondary"
+                    className="flex items-center justify-center hover:text-secondary transition-colors"
                   >
                     <svg
                       width="34"
@@ -159,7 +159,7 @@ export default function Footer() {
                     href="#"
                     target="_blank"
                     title="Instagram"
-                    className="flex items-center justify-center hover:text-secondary"
+                    className="flex items-center justify-center hover:text-secondary transition-colors"
                   >
                     <svg
                       width="34"
@@ -183,7 +183,7 @@ export default function Footer() {
                     href="#"
                     target="_blank"
                     title="Instagram"
-                    className="flex items-center justify-center hover:text-secondary"
+                    className="flex items-center justify-center hover:text-secondary transition-colors"
                   >
                     <svg
                       width="38"
